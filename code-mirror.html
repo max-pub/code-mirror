@@ -46,8 +46,9 @@
             console.log('create code-mirror');
             this.cm = CodeMirror(this.$.editor,{autofocus:true,lineWrapping:true,viewportMargin:Infinity});
             this.cm.on('change',function(){
-                console.log('cahnge to',this.cm.getValue());
+                // console.log('code-mirror: change',this.cm.getValue());
                 this.content = this.cm.getValue();
+                this.fire('change');
             }.bind(this));
             // cm = CodeMirror.fromTextArea(this.$.editor,{mode:'markdown'});
             // setTimeout(function(){cm.setValue('# header\n\n- bullet 1\n- bullet 2\n\njust text\n\some *italic* and **bold** text\n\n[FAZ](www.faz.net)\n\n\n\n\n\n\n\n\n\n');},100);
