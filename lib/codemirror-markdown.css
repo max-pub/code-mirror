@@ -1,0 +1,35 @@
+.cm-header{
+    color: CornflowerBlue !important;
+}
+.cm-header-1 {
+    font-size: 24px;
+}
+.cm-header-2 {
+    font-size: 20px;
+}
+.cm-header-3 {
+    font-size: 16px;
+}
+.cm-header-4{
+    font-size: 14px;
+}
+.cm-variable-2{
+    margin-left: 20px;
+    color: black !important;
+    display: inline-block;
+}
+.cm-variable-2::first-letter{
+    color: CornflowerBlue;
+    font-weight: bold;
+}
+.cm-em{
+    color: silver;
+}
+.cm-link{
+    /*font-weight: bold;*/
+    color: CornflowerBlue !important;
+    text-decoration: none;
+}
+.cm-url{
+    color: silver !important;
+}
